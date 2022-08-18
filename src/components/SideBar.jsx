@@ -6,10 +6,13 @@ const SideBar = () => {
     return (
         <div className="fixed top-0 left-0 h-screen w-16 m-0 
                         flex flex-col justify-center
-                        bg-gray-900 text-white shadow-lg">
-            <SideBarIcon icon={ <FaLinkedin size='28' /> } />
-            <SideBarIcon icon={ <FaGithub size='28' /> } />
-            <SideBarIcon icon={ <HiOutlineMail size='28' /> } />
+                        bg-gray-900 bg-opacity-40  text-white shadow-lg">
+            <div>
+                <SideBarIcon icon={ <FaLinkedin size='28' /> } />
+                <SideBarIcon icon={ <FaGithub size='28' /> } />
+                <SideBarIcon icon={ <HiOutlineMail size='28' /> } />
+            </div>
+            
 
         </div>
     )

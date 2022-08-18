@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <div className="flex">
+    <div className="flex bg-black">
       <SideBar />
     </div>
   );
