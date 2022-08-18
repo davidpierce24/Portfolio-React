@@ -4,10 +4,11 @@ import { HiOutlineMail } from 'react-icons/hi';
 const SideBar = () => {
 
     return (
-        <div className="fixed top-0 left-0 h-screen w-16 ml-4 
+        <div className="fixed top-1/2 -translate-y-1/2 h-auto w-16 ml-4 
                         flex flex-col justify-center
-                        bg-gray-900 bg-opacity-0  text-white shadow-lg">
-            <div className='height-auto bg-gray-300 bg-opacity-20 rounded-xl pt-2 pb-2 backdrop-blur-sm'>
+                        bg-gray-300 bg-opacity-20 text-white 
+                        shadow-lg rounded-xl pt-2 pb-2 backdrop-blur-sm">
+            <div>
                 <a href="https://www.linkedin.com/in/david-pierce-dev24/" target='_blank' rel="noreferrer noopener">
                     <SideBarIcon icon={ <FaLinkedin size='28' /> } text={ 'LinkedIn' } />
                 </a>
