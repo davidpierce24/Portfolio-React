@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className="smooth-scroll">
+    <div className="scroll-smooth">
       <Navbar />
       <SideBar />
       <LandingPage />

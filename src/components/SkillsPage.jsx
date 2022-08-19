@@ -3,7 +3,7 @@
 const SkillsPage = () => {
 
     return (
-        <div className='snap-start w-full h-screen bg-black' id='skills'>
+        <div className='w-full h-screen bg-black' id='skills'>
 
         </div>
     )
