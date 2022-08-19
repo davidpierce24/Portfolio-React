@@ -7,7 +7,7 @@ const LandingPage = () => {
     return (
         <div className='w-full h-screen bg-gradient-to-b from-black to-pink-500 '>
             <motion.div 
-            className="text-white font-bold text-4xl sm:text-7xl flex flex-col items-start justify-center h-screen pl-32 pr-5 sm:pl-64 gap-10"
+            className="text-white font-semibold text-4xl sm:text-6xl flex flex-col items-start justify-center h-screen pl-32 pr-5 sm:pl-64 gap-10 font-jet-brains"
             >
                 <motion.p 
                     className="z-20"
