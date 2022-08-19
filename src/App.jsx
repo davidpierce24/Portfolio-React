@@ -2,17 +2,19 @@ import LandingPage from "./components/LandingPage";
 import Navbar from "./components/NavBar";
 import ProjectsPage from "./components/ProjectsPage";
 import SideBar from "./components/SideBar";
+import SkillsPage from "./components/SkillsPage";
 
 
 function App() {
 
 
   return (
-    <div className="">
+    <div className="smooth-scroll">
       <Navbar />
       <SideBar />
       <LandingPage />
       <ProjectsPage />
+      <SkillsPage />
     </div>
   );
 }
