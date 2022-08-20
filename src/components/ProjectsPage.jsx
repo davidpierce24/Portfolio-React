@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import ChampView from '../videos/ChampView.mp4'
 import Vital from '../videos/Vital.mp4'
+import Stocks from '../videos/StockPredictions.mp4'
+import Impression from '../videos/Impression.mp4'
 
 const ProjectsPage = () => {
 
@@ -11,8 +13,8 @@ const ProjectsPage = () => {
                 
                 <ProjectCard video={ChampView} title={'ChampView'} text={''} tech={''}/>
                 <ProjectCard video={Vital} title={'Vital'} text={''} tech={''}/>
-                <ProjectCard />
-                <ProjectCard />
+                <ProjectCard video={Stocks} title={'Potential'} text={''} tech={''}/>
+                <ProjectCard video={Impression} title={'iMPReSSioN'} text={''} tech={''}/>
             </div>
         </div>
     )
