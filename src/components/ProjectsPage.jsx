@@ -8,17 +8,16 @@ const ProjectsPage = () => {
 
     return (
         <div className='w-full h-auto bg-pink-500 p-5 sm:px-20 sm:py-10' id='projects'>
-            <p className="text-white font-semibold text-4xl sm:text-6xl p-10 pt-20 text-center font-jet-brains">Projects</p>
+            <p className="text-white font-semibold text-4xl sm:text-6xl p-10 pt-20 text-center font-jet-brains ">Projects</p>
             <div className='flex justify-center gap-10 flex-wrap p-5 h-auto'>
-                
                 <ProjectCard video={ChampView} title={'ChampView'} 
-                text={''} tech={''}/>
+                text={'A React League of Legends Champ Visualizer'} tech={'React, Tailwind CSS, Riot API, Chart.js, Vercel'}/>
                 <ProjectCard video={Vital} title={'Vital'} 
-                text={''} tech={''}/>
+                text={'Yelp for Gyms built with C# .NET'} tech={'C#, ASP.NET Core 6, Bootstrap, MySQL, LINQ'}/>
                 <ProjectCard video={Stocks} title={'Potential'} 
                 text={'A Python Machine Learning Stock Predictor'} tech={'Python, Anaconda, Pandas, Prophet Forcasting Model, Plotly, Streamlit'}/>
                 <ProjectCard video={Impression} title={'iMPReSSioN'} 
-                text={''} tech={''}/>
+                text={'A Python/Flask app for in-depth show and movie rankings'} tech={'Python, Flask, Jinja2, MySQL, Bootstrap, CSS 3, HTML 5'}/>
             </div>
         </div>
     )
@@ -26,7 +25,7 @@ const ProjectsPage = () => {
 
 const ProjectCard = ({video, title, text, tech}) => (
     <motion.div 
-        className='bg-blue-500 w-full sm:w-xl 2xl:w-2xl max-w-4xl h-64 sm:h-96 rounded-3xl bg-opacity-80 backdrop-blur-sm shadow-xl shadow-pink-800  flex justify-between overflow-hidden'
+        className='bg-blue-500 w-full sm:w-xl 2xl:w-2xl max-w-4xl h-64 sm:h-96 rounded-3xl bg-opacity-80 backdrop-blur-sm shadow-xl shadow-pink-800 flex justify-between overflow-hidden' style={{backfaceVisibility: 'hidden'}}
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{delay:0.05}}
