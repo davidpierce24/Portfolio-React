@@ -4,9 +4,11 @@ import Vital from '../videos/Vital.mp4'
 import Stocks from '../videos/StockPredictions.mp4'
 import Impression from '../videos/Impression.mp4'
 
+
 const ProjectsPage = () => {
 
     return (
+        
         <div className='w-full h-auto bg-pink-500 p-5 sm:px-20 sm:py-10' id='projects'>
             <p className="text-white font-semibold text-4xl sm:text-6xl p-10 pt-20 text-center font-jet-brains ">Projects</p>
             <div className='flex justify-center gap-10 flex-wrap p-5 h-auto'>
@@ -20,6 +22,7 @@ const ProjectsPage = () => {
                 text={'A Python/Flask app for in-depth show and movie rankings'} tech={'Python, Flask, Jinja2, MySQL, Bootstrap, CSS 3, HTML 5'}/>
             </div>
         </div>
+        
     )
 }
 
@@ -47,6 +50,7 @@ const ProjectCard = ({video, title, text, tech}) => (
 
             </div>
     </motion.div>
+    
 )
 
 const LinkButton = ({name, link}) => (

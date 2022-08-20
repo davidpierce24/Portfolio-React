@@ -5,6 +5,7 @@ import SideBar from "./components/SideBar";
 import SkillsPage from "./components/SkillsPage";
 
 
+
 function App() {
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
