@@ -30,19 +30,19 @@ const SkillsPage = () => {
                 <div className='w-1/2 flex flex-col gap-5 font-jet-brains'>
                     <div className='w-full flex flex-col h-1/4 bg-blue-500 bg-opacity-80 backdrop-blur-lg rounded-3xl shadow-xl shadow-pink-800 p-5 justify-around'>
                         <p className='text-2xl text-center'>Full Stack Development</p>
-                        <div className='text-xl flex gap-3 justify-around'><span>MERN</span><span>C# .NET</span><span>Python / Flask</span></div>
+                        <div className='text-xl flex flex-wrap gap-3 justify-around'><span>MERN</span><span>C# .NET</span><span>Python / Flask</span></div>
                     </div>
                     <div className='w-full flex flex-col h-1/4 bg-blue-500 bg-opacity-80 backdrop-blur-lg rounded-3xl shadow-xl shadow-pink-800 p-5 justify-around'>
                         <p className='text-2xl text-center'>Languages</p>
-                        <div className='text-xl flex gap-3 justify-around'><span>JavaScript</span><span>C#</span><span>Python</span><span>SQL</span><span>HTML 5</span><span>CSS 3</span></div>
+                        <div className='text-xl flex flex-wrap gap-3 justify-around'><span>JavaScript</span><span>C#</span><span>Python</span><span>SQL</span><span>HTML 5</span><span>CSS 3</span></div>
                     </div>
                     <div className='w-full flex flex-col h-1/4 bg-blue-500 bg-opacity-80 backdrop-blur-lg rounded-3xl shadow-xl shadow-pink-800 p-5 justify-around'>
                         <p className='text-2xl text-center'>Frameworks / Libraries / Databases</p>
-                        <div className='text-xl flex gap-3 justify-around'><span>MERN</span><span>C# .NET</span><span>Python / Flask</span></div>
+                        <div className='text-xl flex gap-3 justify-around flex-wrap'><span>React</span><span>NodeJS</span><span>Express</span><span>ASP.NET Core</span><span>Flask</span><span>MongoDB</span><span>MySQL</span><span>Anaconda</span><span>Tailwind CSS</span><span>Bootstrap</span></div>
                     </div>
                     <div className='w-full flex flex-col h-1/4 bg-blue-500 bg-opacity-80 backdrop-blur-lg rounded-3xl shadow-xl shadow-pink-800 p-5 justify-around'>
-                        <p className='text-2xl text-center'>Full Stack Development</p>
-                        <div className='text-xl flex gap-3 justify-around'><span>MERN</span><span>C# .NET</span><span>Python / Flask</span></div>
+                        <p className='text-2xl text-center'>Other Tools</p>
+                        <div className='text-xl flex flex-wrap gap-3 justify-around'><span>Figma</span><span>Rest API</span><span>AWS EC2</span><span>Postman</span><span>Heroku</span><span>FL Studio</span><span>Google Cloud</span><span>VS Code</span><span>GitHub</span></div>
                     </div>
                 </div>
 
