@@ -14,12 +14,24 @@ const ProjectsPage = () => {
             <div className='flex justify-center gap-10 flex-wrap p-5 h-auto'>
                 <ProjectCard video={ChampView} title={'ChampView'} 
                 text={'A React League of Legends Champ Visualizer'} tech={'React, Tailwind CSS, Riot API, Chart.js, Vercel'}/>
+                    <div className='flex gap-2 sm:hidden'>
+                        <SmallLinkButton name={'Go to the Site'} link={'https://lol-react-app.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Champ-View-League-of_Legends_React_App'} />
+                    </div>
                 <ProjectCard video={Vital} title={'Vital'} 
                 text={'Yelp for Gyms built with C# .NET'} tech={'C#, ASP.NET Core 6, Bootstrap, MySQL, LINQ'}/>
+                    <div className='flex gap-2 sm:hidden'>
+                        <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Vital_Gym-Finder_CSharp-FullStack-Project'} />
+                    </div>
                 <ProjectCard video={Stocks} title={'Potential'} 
                 text={'A Python Machine Learning Stock Predictor'} tech={'Python, Anaconda, Pandas, Prophet Forcasting Model, Plotly, Streamlit'}/>
+                    <div className='flex gap-2 sm:hidden'>
+                        <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/machine_learning_stock_prediction_python'} />
+                    </div>
                 <ProjectCard video={Impression} title={'iMPReSSioN'} 
                 text={'A Python/Flask app for in-depth show and movie rankings'} tech={'Python, Flask, Jinja2, MySQL, Bootstrap, CSS 3, HTML 5'}/>
+                    <div className='flex gap-2 sm:hidden'>
+                        <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />
+                    </div>
             </div>
         </div>
         
@@ -36,7 +48,7 @@ const ProjectCard = ({video, title, text, tech}) => (
             <video controls autoPlay loop muted className='relative w-full sm:w-1/2 h-full object-cover'>
                 <source src={video}/>
             </video>
-            <div  className='invisible sm:visible w-1/2 h-full flex flex-col justify-around items-center p-5 font-jet-brains'>
+            <div  className='hidden sm:flex w-1/2 h-full flex-col justify-around items-center p-5 font-jet-brains'>
                 <p className='text-white text-2xl xl:text-4xl'>{title}</p>
                 <p className='text-white text-md md:text-2xl text-center mt-4'>{text}</p>
                 <p className='text-white text-md md:text-2xl text-center mt-4 '>{tech}</p>
@@ -60,6 +72,16 @@ const LinkButton = ({name, link}) => (
     data-mdb-ripple="true"
     data-mdb-ripple-color="light"
     class="inline-block px-6 py-2.5 bg-pink-500 text-white font-semibold text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition  ease-in-out hover:scale-105 duration-150"
+  >{name}</button></a>
+)
+
+const SmallLinkButton = ({name, link}) => (
+    <a href={link} target='_blank' rel="noreferrer noopener"
+    ><button
+    type="button"
+    data-mdb-ripple="true"
+    data-mdb-ripple-color="light"
+    class="inline-block px-6 py-2.5 bg-blue-500 text-white font-semibold text-xs leading-tight uppercase rounded shadow-md hover:bg-pink-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition  ease-in-out hover:scale-105 duration-150"
   >{name}</button></a>
 )
 
