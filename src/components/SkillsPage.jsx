@@ -3,7 +3,7 @@ import { motion, useInView, useScroll} from "framer-motion";
 const SkillsPage = () => {
 
     return (
-        <div className='w-full h-auto xl:h-screen bg-gradient-to-b from-pink-500 to-black p-10 lg:px-32 py-28 flex flex-col gap-10'  id='skills'>
+        <div className='w-full h-auto xl:h-screen bg-gradient-to-b from-pink-500 to-pink-700 p-10 lg:px-32 py-28 flex flex-col gap-10'  id='skills'>
             <div><p className="text-white font-semibold text-4xl sm:text-6xl text-center font-jet-brains ">Skills</p></div>
             <div className='w-full h-full  text-white flex gap-5 flex-wrap xl:flex-nowrap justify-center'>
                 <div className='w-full xl:w-1/2 h-full flex flex-col gap-5 font-jet-brains'>
