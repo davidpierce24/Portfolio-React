@@ -24,7 +24,7 @@ const SkillsPage = () => {
                         <div className='text-xl flex flex-wrap gap-3 justify-around'><span>Figma</span><span>Rest API</span><span>AWS EC2</span><span>Postman</span><span>Heroku</span><span>FL Studio</span><span>Google Cloud</span><span>VS Code</span><span>GitHub</span></div>
                     </div>
                 </div>
-                <div className='w-full xl:w-1/2 h-96 xl:h-full flex flex-wrap justify-around items-center gap-2 p-2 bg-slate-700 bg-opacity-20 backdrop-blur-lg rounded-3xl shadow-xl'>
+                <div className='w-full xl:w-1/2 h-screen xl:h-full flex flex-wrap justify-around items-center gap-2 p-2'>
                     <div className=' text-3xl font-jet-brains' >
                         Drag Me
                     </div>
