@@ -1,4 +1,5 @@
 import { motion, useInView, useScroll} from "framer-motion";
+import anime from 'animejs/lib/anime.es.js';
 
 const SkillsPage = () => {
 
@@ -24,11 +25,11 @@ const SkillsPage = () => {
                         <div className='text-xl flex flex-wrap gap-3 justify-around'><span>Figma</span><span>Rest API</span><span>AWS EC2</span><span>Postman</span><span>Heroku</span><span>FL Studio</span><span>Google Cloud</span><span>VS Code</span><span>GitHub</span></div>
                     </div>
                 </div>
-                <div className='w-full xl:w-1/2 h-screen xl:h-full grid grid-cols-4 place-items-center gap-4 p-2'>
+                <div className='w-full xl:w-1/2 h-screen xl:h-full grid grid-cols-4 place-items-center gap-4 p-2' id='grid'>
                     <div className=' text-3xl font-jet-brains col-span-full' >
                         Drag These
                     </div>
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -38,7 +39,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -47,7 +48,7 @@ const SkillsPage = () => {
                         bottom: 0
                     }}
                     dragElastic={3}/>
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -56,7 +57,7 @@ const SkillsPage = () => {
                         bottom: 0
                     }}
                     dragElastic={3}/>
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="..." className='w-12 h-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="..." className='w-12 h-12' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -66,7 +67,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -76,7 +77,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -86,7 +87,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="..." className='w-12 h-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="..." className='w-12 h-12' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -96,7 +97,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="..." className='w-12 h-12 '
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -106,7 +107,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="..." className='w-12 h-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="..." className='w-12 h-12' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -116,7 +117,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -126,7 +127,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -136,7 +137,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="..." className='w-12 h-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="..." className='w-12 h-12' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -146,7 +147,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="..." className='w-12 h-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="..." className='w-12 h-12' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -156,7 +157,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -166,7 +167,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -176,7 +177,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -186,7 +187,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -196,7 +197,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="..." className='w-12 h-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="..." className='w-12 h-12' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -206,7 +207,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -216,7 +217,7 @@ const SkillsPage = () => {
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="..." className='w-12 h-12 ' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="..." className='w-12 h-12 ' id='icon'
                     drag
                     dragConstraints={{
                         left: 0,
@@ -231,6 +232,19 @@ const SkillsPage = () => {
             </div>
         </div>
     )
+}
+
+window.onload = function(){
+    anime({
+        targets: '#icon',
+        translateY: -20,
+        scale: [
+            {value: 0, easing: 'easeOutSine', duration: 500},
+            {value: 1, easing: 'easeInOutQuad', duration: 1200}
+        ],
+        delay: anime.stagger(400, {direction: 'center'}, {grid: [4, 5], from: 'center'}),
+        loop: true
+    });
 }
 
 export default SkillsPage;
