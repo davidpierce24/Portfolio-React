@@ -24,210 +24,209 @@ const SkillsPage = () => {
                         <div className='text-xl flex flex-wrap gap-3 justify-around'><span>Figma</span><span>Rest API</span><span>AWS EC2</span><span>Postman</span><span>Heroku</span><span>FL Studio</span><span>Google Cloud</span><span>VS Code</span><span>GitHub</span></div>
                     </div>
                 </div>
-                <div className='w-full xl:w-1/2 h-screen xl:h-full flex flex-wrap justify-around items-center gap-2 p-2'>
-                    <div className=' text-3xl font-jet-brains' >
-                        Drag Me
+                <div className='w-full xl:w-1/2 h-screen xl:h-full grid grid-cols-4 place-items-center gap-4 p-2'>
+                    <div className=' text-3xl font-jet-brains col-span-full' >
+                        Drag These
                     </div>
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="..." className='w-12 h-12 translate-x-10 translate-y-20' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="..." className='w-12 h-12 translate-x-4 -translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}/>
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="..." className='w-12 h-12 translate-x-10 translate-y-40' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}/>
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="..." className='w-12 h-12 translate-x-32 -translate-y-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="..." className='w-12 h-12' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="..." className='w-12 h-12 translate-x-4 translate-y-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="..." className='w-12 h-12 translate-x-10 translate-y-40' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="..." className='w-12 h-12 translate-x-4 translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="..." className='w-12 h-12' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="..." className='w-12 h-12 translate-x-4 -translate-y-8'
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="..." className='w-12 h-12 '
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="..." className='w-12 h-12 translate-x-10 translate-y-20' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="..." className='w-12 h-12' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="..." className='w-12 h-12 translate-x-4 -translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="..." className='w-12 h-12 translate-x-4 -translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="..." className='w-12 h-12 translate-x-4 translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="..." className='w-12 h-12' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="..." className='w-12 h-12 translate-x-4 -translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="..." className='w-12 h-12' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="..." className='w-12 h-12 -translate-x-10 translate-y-40' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="..." className='w-12 h-12 translate-x-4 translate-y-12' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="..." className='w-12 h-12 translate-x-4 -translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="..." className='w-12 h-12 translate-x-4 -translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="..." className='w-12 h-12 translate-x-10 -translate-y-32' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="..." className='w-12 h-12' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="..." className='w-12 h-12 translate-x-10 -translate-y-20' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
-                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="..." className='w-12 h-12 -translate-x-40 translate-y-8' 
+                    <motion.img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="..." className='w-12 h-12 ' 
                     drag
                     dragConstraints={{
-                        left: -20,
-                        right:20, 
-                        top: 30,
-                        bottom: -50
+                        left: 0,
+                        right:0, 
+                        top: 0,
+                        bottom: 0
                     }}
                     dragElastic={3}
                     />
                 </div>
-                
 
             </div>
         </div>
