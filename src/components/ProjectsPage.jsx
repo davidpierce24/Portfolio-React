@@ -3,6 +3,7 @@ import ChampView from '../videos/ChampView.mp4'
 import Vital from '../videos/Vital.mp4'
 import Stocks from '../videos/StockPredictions.mp4'
 import Impression from '../videos/Impression.mp4'
+import PickMeUp from '../videos/PickMeUp.mp4'
 
 
 const ProjectsPage = () => {
@@ -16,6 +17,11 @@ const ProjectsPage = () => {
                 text={'A React League of Legends Champ Visualizer'} tech={'React, Tailwind CSS, Riot API, Chart.js, Vercel'}/>
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Go to the Site'} link={'https://lol-react-app.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Champ-View-League-of_Legends_React_App'} />
+                    </div>
+                <ProjectCard video={PickMeUp} title={'PickMeUp'} 
+                text={'Door Dash / Deliveroo clone built in React Native'} tech={'React Native, JavaScript, Redux, Sanity.io, Tailwind CSS'}/>
+                    <div className='flex gap-2 sm:hidden'>
+                        <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />
                     </div>
                 <ProjectCard video={Vital} title={'Vital'} 
                 text={'Yelp for Gyms built with C# .NET'} tech={'C#, ASP.NET Core 6, Bootstrap, MySQL, LINQ'}/>
