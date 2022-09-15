@@ -65,6 +65,7 @@ const ProjectCard = ({video, title, text, tech}) => (
                 {video == Vital && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Vital_Gym-Finder_CSharp-FullStack-Project'} />}
                 {video == Impression && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />}
                 {video == Stocks && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/machine_learning_stock_prediction_python'} />}
+                {video == PickMeUp && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />}
 
             </div>
     </motion.div>
