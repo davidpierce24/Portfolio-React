@@ -4,6 +4,7 @@ import Vital from '../videos/Vital.mp4'
 import Stocks from '../videos/StockPredictions.mp4'
 import Impression from '../videos/Impression.mp4'
 import PickMeUp from '../videos/PickMeUp.mp4'
+import ShipIt from '../videos/ShipIt.mp4'
 
 
 const ProjectsPage = () => {
@@ -23,6 +24,11 @@ const ProjectsPage = () => {
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />
                     </div>
+                    <ProjectCard video={ShipIt} title={'Ship It'} 
+                    text={'UPS tracker clone built in React Native'} tech={'React Native, Typescript, Firebase, GraphQL, Tailwind CSS'}/>
+                        <div className='flex gap-2 sm:hidden'>
+                            <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />
+                        </div>
                 <ProjectCard video={Vital} title={'Vital'} 
                 text={'Yelp for Gyms built with C# .NET'} tech={'C#, ASP.NET Core 6, Bootstrap, MySQL, LINQ'}/>
                     <div className='flex gap-2 sm:hidden'>
@@ -66,7 +72,7 @@ const ProjectCard = ({video, title, text, tech}) => (
                 {video == Impression && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />}
                 {video == Stocks && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/machine_learning_stock_prediction_python'} />}
                 {video == PickMeUp && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />}
-
+                {video == ShipIt && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />}
             </div>
     </motion.div>
     
