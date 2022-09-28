@@ -19,16 +19,16 @@ const ProjectsPage = () => {
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Go to the Site'} link={'https://lol-react-app.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Champ-View-League-of_Legends_React_App'} />
                     </div>
-                <ProjectCard video={PickMeUp} title={'PickMeUp'} 
+                <ProjectCardApp video={PickMeUp} title={'PickMeUp'} 
                 text={'Door Dash / Deliveroo clone built in React Native'} tech={'React Native, JavaScript, Redux, Sanity.io, Tailwind CSS'}/>
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />
                     </div>
-                    <ProjectCard video={ShipIt} title={'Ship It'} 
-                    text={'UPS tracker clone built in React Native'} tech={'React Native, Typescript, Firebase, GraphQL, Tailwind CSS'}/>
-                        <div className='flex gap-2 sm:hidden'>
-                            <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />
-                        </div>
+                <ProjectCardApp video={ShipIt} title={'Ship It'} 
+                text={'UPS tracker clone built in React Native'} tech={'React Native, Typescript, Firebase, GraphQL, Tailwind CSS'}/>
+                    <div className='flex gap-2 sm:hidden'>
+                        <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />
+                    </div>
                 <ProjectCard video={Vital} title={'Vital'} 
                 text={'Yelp for Gyms built with C# .NET'} tech={'C#, ASP.NET Core 6, Bootstrap, MySQL, LINQ'}/>
                     <div className='flex gap-2 sm:hidden'>
@@ -77,6 +77,36 @@ const ProjectCard = ({video, title, text, tech}) => (
     </motion.div>
     
 )
+
+const ProjectCardApp = ({video, title, text, tech}) => (
+    <motion.div 
+        className='bg-blue-500 w-full sm:w-xl 2xl:w-2xl max-w-4xl h-64 sm:h-96 rounded-3xl bg-opacity-80 backdrop-blur-sm shadow-xl shadow-pink-800 flex justify-between overflow-hidden' style={{backfaceVisibility: 'hidden'}}
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{delay:0.05}}
+        >
+            <video controls autoPlay loop muted className='relative w-full sm:w-1/2 h-full object-fit bg-black bg-opacity-80'>
+                <source src={video}/>
+            </video>
+            <div  className='hidden sm:flex w-1/2 h-full flex-col justify-around items-center p-5 font-jet-brains'>
+                <p className='text-white text-2xl xl:text-4xl'>{title}</p>
+                <p className='text-white text-md md:text-2xl text-center mt-4'>{text}</p>
+                <p className='text-white text-md md:text-2xl text-center mt-4 '>{tech}</p>
+                {video == ChampView &&  
+                    <div className='flex gap-2'>
+                        <LinkButton name={'Go to the Site'} link={'https://lol-react-app.vercel.app/'} /><LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Champ-View-League-of_Legends_React_App'} />
+                    </div>  }
+                {video == Vital && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Vital_Gym-Finder_CSharp-FullStack-Project'} />}
+                {video == Impression && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />}
+                {video == Stocks && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/machine_learning_stock_prediction_python'} />}
+                {video == PickMeUp && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />}
+                {video == ShipIt && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />}
+            </div>
+    </motion.div>
+    
+)
+
+
 
 const LinkButton = ({name, link}) => (
     <a href={link} target='_blank' rel="noreferrer noopener"
