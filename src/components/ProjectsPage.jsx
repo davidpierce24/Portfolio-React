@@ -23,7 +23,7 @@ const ProjectsPage = () => {
                 <ProjectCard video={Airbnb} title={'Airbnb Me'} 
                 text={'An Airbnb clone built React and Next.js'} tech={'React, Tailwind CSS, Mapbox API, Next.js, Vercel'}/>
                     <div className='flex gap-2 sm:hidden'>
-                        <SmallLinkButton name={'Go to the Site'} link={'https://airbnb-clone-react-nextjs-phi.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
+                        <SmallLinkButton name={'Go to the Site'} link={'https://notbnb-react-nextjs.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
                     </div>
                 <ProjectCardApp video={PickMeUp} title={'PickMeUp'} 
                 text={'Door Dash / Deliveroo clone built in React Native'} tech={'React Native, JavaScript, Redux, Sanity.io, Tailwind CSS'}/>
@@ -73,7 +73,7 @@ const ProjectCard = ({video, title, text, tech}) => (
                 {video == Impression && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />}
                 {video == Airbnb &&  
                     <div className='flex gap-2'>
-                        <LinkButton name={'Go to the Site'} link={'https://airbnb-clone-react-nextjs-phi.vercel.app/'} /><LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
+                        <LinkButton name={'Go to the Site'} link={'https://notbnb-react-nextjs.vercel.app/'} /><LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
                     </div>  }
                 {video == PickMeUp && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />}
                 {video == ShipIt && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />}
@@ -104,7 +104,7 @@ const ProjectCardApp = ({video, title, text, tech}) => (
                 {video == Impression && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />}
                 {video == Airbnb &&  
                     <div className='flex gap-2'>
-                        <LinkButton name={'Go to the Site'} link={'https://airbnb-clone-react-nextjs-phi.vercel.app/'} /><LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
+                        <LinkButton name={'Go to the Site'} link={'https://notbnb-react-nextjs.vercel.app/'} /><LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
                     </div>  }
                 {video == PickMeUp && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />}
                 {video == ShipIt && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />}
