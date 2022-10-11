@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
 import ChampView from '../videos/ChampView.mp4'
 import Vital from '../videos/Vital.mp4'
-import Stocks from '../videos/StockPredictions.mp4'
+// import Stocks from '../videos/StockPredictions.mp4'
 import Impression from '../videos/Impression.mp4'
 import PickMeUp from '../videos/PickMeUp.mp4'
 import ShipIt from '../videos/ShipIt.mp4'
+import Airbnb from '../videos/Airbnb.mp4'
 
 
 const ProjectsPage = () => {
@@ -18,6 +19,11 @@ const ProjectsPage = () => {
                 text={'A React League of Legends Champ Visualizer'} tech={'React, Tailwind CSS, Riot API, Chart.js, Vercel'}/>
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Go to the Site'} link={'https://lol-react-app.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Champ-View-League-of_Legends_React_App'} />
+                    </div>
+                <ProjectCard video={Airbnb} title={'Airbnb Me'} 
+                text={'An Airbnb clone built React and Next.js'} tech={'React, Tailwind CSS, Mapbox API, Next.js, Vercel'}/>
+                    <div className='flex gap-2 sm:hidden'>
+                        <SmallLinkButton name={'Go to the Site'} link={'https://airbnb-clone-react-nextjs-phi.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
                     </div>
                 <ProjectCardApp video={PickMeUp} title={'PickMeUp'} 
                 text={'Door Dash / Deliveroo clone built in React Native'} tech={'React Native, JavaScript, Redux, Sanity.io, Tailwind CSS'}/>
@@ -33,11 +39,6 @@ const ProjectsPage = () => {
                 text={'Yelp for Gyms built with C# .NET'} tech={'C#, ASP.NET Core 6, Bootstrap, MySQL, LINQ'}/>
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Vital_Gym-Finder_CSharp-FullStack-Project'} />
-                    </div>
-                <ProjectCard video={Stocks} title={'Potential'} 
-                text={'A Python Machine Learning Stock Predictor'} tech={'Python, Anaconda, Pandas, Prophet Forcasting Model, Plotly, Streamlit'}/>
-                    <div className='flex gap-2 sm:hidden'>
-                        <SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/machine_learning_stock_prediction_python'} />
                     </div>
                 <ProjectCard video={Impression} title={'iMPReSSioN'} 
                 text={'A Python/Flask app for in-depth show and movie rankings'} tech={'Python, Flask, Jinja2, MySQL, Bootstrap, CSS 3, HTML 5'}/>
@@ -70,7 +71,10 @@ const ProjectCard = ({video, title, text, tech}) => (
                     </div>  }
                 {video == Vital && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Vital_Gym-Finder_CSharp-FullStack-Project'} />}
                 {video == Impression && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />}
-                {video == Stocks && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/machine_learning_stock_prediction_python'} />}
+                {video == Airbnb &&  
+                    <div className='flex gap-2'>
+                        <LinkButton name={'Go to the Site'} link={'https://airbnb-clone-react-nextjs-phi.vercel.app/'} /><LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
+                    </div>  }
                 {video == PickMeUp && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />}
                 {video == ShipIt && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />}
             </div>
@@ -98,7 +102,10 @@ const ProjectCardApp = ({video, title, text, tech}) => (
                     </div>  }
                 {video == Vital && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Vital_Gym-Finder_CSharp-FullStack-Project'} />}
                 {video == Impression && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/iMPReSSioN-python-flask-full-stack'} />}
-                {video == Stocks && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/machine_learning_stock_prediction_python'} />}
+                {video == Airbnb &&  
+                    <div className='flex gap-2'>
+                        <LinkButton name={'Go to the Site'} link={'https://airbnb-clone-react-nextjs-phi.vercel.app/'} /><LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
+                    </div>  }
                 {video == PickMeUp && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/PickMeUp-delivery-app-clone-react-native'} />}
                 {video == ShipIt && <LinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Ship-It-UPS-Delivery-Tracker-Clone-React-Native'} />}
             </div>
