@@ -20,7 +20,7 @@ const ProjectsPage = () => {
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Go to the Site'} link={'https://lol-react-app.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/Champ-View-League-of_Legends_React_App'} />
                     </div>
-                <ProjectCard video={Airbnb} title={'Airbnb Me'} 
+                <ProjectCard video={Airbnb} title={'Notbnb'} 
                 text={'An Airbnb clone built React and Next.js'} tech={'React, Tailwind CSS, Mapbox API, Next.js, Vercel'}/>
                     <div className='flex gap-2 sm:hidden'>
                         <SmallLinkButton name={'Go to the Site'} link={'https://notbnb-react-nextjs.vercel.app/'} /><SmallLinkButton name={'Check it Out On GitHub'} link={'https://github.com/davidpierce24/airbnb-clone-react-nextjs'} />
