@@ -17,7 +17,7 @@ function App() {
       <SideBar />
       <LandingPage />
       <ProjectsPage />
-      <SkillsPage />
+      {/* <SkillsPage /> */}
     </div>
   );
 }

@@ -13,8 +13,8 @@ const Navbar = () => {
                 <li className='hover:text-white  transition-all duration-200 ease-linear cursor-pointer drop-shadow-xl' onClick={() => scrollTo('home')}>Home</li>
                 <BsDot size='28' />
                 <li className='hover:text-white  transition-all duration-200 ease-linear cursor-pointer ' onClick={() => scrollTo('projects')}>Projects</li>
-                <BsDot size='28' />
-                <li className='hover:text-white  transition-all duration-200 ease-linear cursor-pointer ' onClick={() => scrollTo('skills')}>Skills</li>
+                {/* <BsDot size='28' />
+                <li className='hover:text-white  transition-all duration-200 ease-linear cursor-pointer ' onClick={() => scrollTo('skills')}>Skills</li> */}
             </ul>
         </div>
     )

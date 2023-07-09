@@ -61,7 +61,7 @@ const LandingPage = () => {
                         delay: 1.5
                     }}
                 >
-                    JavaScript | React | React Native | Python | C#
+                    TypeScript | C# | React | Python | React Native
                 </motion.p>
             </motion.div>
             <motion.div 
